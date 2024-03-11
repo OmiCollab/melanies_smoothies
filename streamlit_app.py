@@ -20,7 +20,6 @@ session = cnx.session()
 
 # st.write('You selected:', option)
 
-session = get_active_session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('Fruit_name'))
 #st.dataframe(data=my_dataframe, use_container_width=True)
 ingredients_list = st.multiselect(
